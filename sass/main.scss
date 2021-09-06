@@ -1,0 +1,294 @@
+@import './variables';
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    @media (min-width: $desktop-size){
+    }
+}
+
+.title, .info, .text, .number{
+    margin: 0;
+}
+
+.info{
+    font-weight: $big-weight;
+    color: $text-grayish;
+}
+
+.info-up{
+    color: $primary-color-lime-green;
+}
+
+.info-down{
+    color: $primary-color-bright-red;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size;
+    font-family: $family-font;
+    font-weight: $regular-weight;
+    background-color: $bg;
+    color: $text-dark;
+    @media (min-width: $desktop-size){
+        box-sizing: border-box;
+    }
+}
+
+.top-bg-pattern{
+    width: 100%;
+    height: 14.6875rem;
+    background-color: $top-bg-patter;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    border-radius: 0 0 0.875rem 0.875rem;
+}
+
+.main{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2.5rem 1.5625rem;
+    width: 100%;
+    @media (min-width: $desktop-size){
+        max-width: 70.4375rem;
+        align-items: center;
+    }
+}
+
+.big_header{
+    width: 100%;
+    @media (min-width: $desktop-size){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header{
+    float:left;
+    border-bottom: .0625rem $neutral-color-light-theme-very-dark-blue-TEXT solid;
+    padding-bottom: 1.375rem;
+    padding-right: 2.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    @media (min-width: $desktop-size){
+        border: 0rem;
+        display: inline-block;
+        padding-bottom: 2.75rem;
+    }
+    .title{
+        font-size: $font-size + .6rem;
+        font-weight: $big-weight;
+    }
+}
+
+.button_area{
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    @media (min-width: $desktop-size){
+        width: 11.4375rem;
+    }
+    .button{
+        position: relative;
+        @media (min-width: $desktop-size){
+            width: 3rem;
+        }
+        .bg-button{
+            width: 3rem;
+            height: 1.5rem;
+            background-color: $light-theme-toggle;
+            border-radius: 2rem;
+            z-index: 2;
+        }
+        .circle-button{
+            position: absolute;
+            z-index: 3;
+            top: 3px;
+            right: 4px;
+            width: 1.125rem;
+            height: 1.125rem;
+            background-color: $neutral-color-light-theme-white-BG;
+            border-radius: 50%;
+        }   
+    }
+}
+
+.big-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: $desktop-size){
+        flex-direction: row;
+    }
+    .card:not(:last-child){
+        @media (min-width: $desktop-size){
+            margin-right: 1.875rem;
+        }
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        background-color: $card-bg;
+        margin-bottom: 1.5rem;
+        border-radius: 0.3125rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.75rem 0;
+        .info-app{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1.75rem;
+            .info{
+                margin-left: 0.5rem;
+            }
+        }
+        .number{
+            font-weight: $big-weight;
+            font-size: $font-size + 2.9rem;
+        }
+        .text{
+            color: $neutral-color-light-theme-dark-grayish-blue-TEXT;
+            text-transform: uppercase;
+            letter-spacing: 0.4375rem;
+        }
+        .rating{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1.5rem;
+            .icon{
+                width: 0.5rem;
+                height: 0.5rem;
+                margin-right: 0.1875rem;
+            }
+        }
+    }
+}
+
+#facebook{
+    border-top: $facebook-color 0.25rem solid;
+}
+
+#twitter{
+    border-top: $twitter-color 0.25rem solid;
+}
+
+#instagram{
+    border-top: 0.25rem solid;
+    border-radius: 0.3125rem;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+}
+
+#youtube{
+    border-top: $youtube-color 0.25rem solid;
+}
+
+.title-mid{
+    font-weight: $big-weight;
+    color: $text-grayish;
+    @media (min-width: $desktop-size){
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
+}
+
+.small-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: $desktop-size){
+        display: grid;
+        grid-template-columns: repeat(4, 15.9375rem);
+        grid-template-rows: repeat(2, 7.8125rem);
+        column-gap: 1.875rem;
+        row-gap: 1.5rem;
+    }
+    .card{
+        width: 100%;
+        background-color: $card-bg;
+        border-radius: 0.3125rem;
+        margin-bottom: 1rem;
+        padding: 1.625rem 1.9375rem;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: repeat(2, 50%);
+        @media (min-width: $desktop-size){
+            row-gap: .65rem;
+            height: 100%;
+        }
+        .title{
+            font-weight: $big-weight;
+            color: $text-grayish;
+        }
+        .icon{
+            justify-self: flex-end;
+        }
+        .number{
+            color: $text-dark;
+            font-weight: $big-weight;
+            font-size: $font-size + 1rem;
+            align-self: flex-start;
+        }
+        .rating{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1.5rem;
+            justify-self: flex-end;
+            align-self: flex-end;
+            .icon{
+                width: 0.5rem;
+                height: 0.5rem;
+                margin-right: 0.1875rem;
+            }
+        }
+    }
+    #small_card1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #small_card2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #small_card3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #small_card4{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    #small_card5{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #small_card6{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #small_card7{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #small_card8{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+}

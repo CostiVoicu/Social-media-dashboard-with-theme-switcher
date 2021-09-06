@@ -1,0 +1,36 @@
+$desktop-size: 72.3125rem;
+$primary-color-lime-green: hsl(163, 72%, 41%);
+$primary-color-bright-red: hsl(356, 69%, 56%);
+
+$facebook-color: hsl(208, 92%, 53%);
+$twitter-color: hsl(203, 89%, 53%);
+$instagram-color: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+
+$youtube-color: hsl(348, 97%, 39%);
+
+$dark-theme-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+$light-theme-toggle: hsl(230, 22%, 74%);
+
+$neutral-color-dark-theme-very-dark-blue-BG: hsl(230, 17%, 14%);
+$neutral-color-dark-theme-very-dark-blue-TOP-BG-PATTERN: hsl(232, 19%, 15%);
+$neutral-color-dark-theme-dark-desaturated-blue-CARD-BG: hsl(228, 28%, 20%);
+$neutral-color-dark-theme-desaturated-blue-TEXT: hsl(228, 34%, 66%);
+$neutral-color-dark-theme-white-TEXT: hsl(0, 0%, 100%);
+
+$neutral-color-light-theme-white-BG: hsl(0, 0%, 100%);
+$neutral-color-light-theme-very-pale-bue-TOP-BG-PATTERN: hsl(225, 100%, 98%);
+$neutral-color-light-theme-light-grayish-blue-CARD-BG: hsl(227, 47%, 96%);
+$neutral-color-light-theme-dark-grayish-blue-TEXT: hsl(228, 12%, 44%);
+$neutral-color-light-theme-very-dark-blue-TEXT: hsl(230, 17%, 14%);
+
+$font-size: 0.875rem;
+
+$family-font: 'Inter';
+$regular-weight: 400;
+$big-weight: 700;
+
+$bg: $neutral-color-light-theme-white-BG;
+$top-bg-patter: $neutral-color-light-theme-very-pale-bue-TOP-BG-PATTERN;
+$card-bg: $neutral-color-light-theme-light-grayish-blue-CARD-BG;
+$text-grayish: $neutral-color-light-theme-dark-grayish-blue-TEXT;
+$text-dark: $neutral-color-light-theme-very-dark-blue-TEXT;
